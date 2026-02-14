@@ -42,7 +42,7 @@ export default function Register() {
         venueManager: role === "manager",
       };
 
-      const _createdUser = await registerUser(payload);
+      await registerUser(payload);
 
       navigate("/login");
     } catch (err) {
