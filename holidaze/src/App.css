@@ -12,7 +12,7 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #500f47);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
@@ -39,4 +39,33 @@
 
 .read-the-docs {
   color: #888;
+}
+
+:root {
+  /* Brand */
+  --color-primary: #b455c6;
+  --color-primary-dark: #6a1b7b;
+  --color-primary-light: #f3d9f7;
+
+  /* Accent */
+  --color-accent: #e56ba8;
+  --color-accent-dark: #9c275f;
+
+  /* Text */
+  --color-text-primary: #1e1e1e;
+  --color-text-secondary: #4b4b4b;
+
+  /* Background */
+  --color-bg-main: #ffffff;
+  --color-bg-alt: #f7f7f7;
+
+  /* UI */
+  --color-border: #d1d1d1;
+  --color-focus: #6a1b7b;
+
+  /* Status */
+  --color-success: #2e7d32;
+  --color-warning: #ed6c02;
+  --color-error: #c62828;
+  --color-info: #1565c0;
 }
