@@ -1,7 +1,10 @@
 import { NavLink } from "react-router-dom";
 import { getUser } from "../../utils/auth";
 
-type User = { venueManager: boolean };
+type User = {
+  venueManager?: boolean | string;
+  role?: string;
+};
 
 function itemClass({ isActive }: { isActive: boolean }) {
   return isActive
@@ -13,7 +16,12 @@ export default function MobileBottomNav() {
   const user = getUser<User>();
   if (!user) return null;
 
-  const items = user.venueManager
+  const isManager =
+    user.venueManager === true ||
+    user.venueManager === "true" ||
+    user.role?.toLowerCase().includes("manager") === true;
+
+  const items = isManager
     ? [
         { to: "/manager", label: "My venues" },
         { to: "/manager/create", label: "Create" },

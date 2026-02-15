@@ -17,7 +17,7 @@ export type CreateVenuePayload = Pick<
   | "location"
 >;
 
-// ✅ Updated: supports pagination (but still defaults to limit=100, page=1)
+// Updated:)
 export async function getVenues(params?: {
   limit?: number;
   page?: number;

@@ -7,13 +7,13 @@ export default function Footer() {
   const user = getUser<User>();
   const { pathname } = useLocation();
 
-  // ✅ Mobile footer only before login and only on homepage
+  // Mobile footer only before login and only on homepage
   const showMobileFooter =
     !user && (pathname === "/" || pathname === "/explore");
 
   return (
     <footer className="border-t bg-white">
-      {/* ✅ Desktop footer: always visible */}
+      {/* Desktop footer: always visible */}
       <div className="hidden md:block">
         <div className="max-w-6xl mx-auto px-4 py-8 grid gap-6 md:grid-cols-3">
           <div className="space-y-2">
@@ -35,7 +35,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* ✅ Mobile footer: only before login on home */}
+      {/*Mobile footer: only before login on home */}
       {showMobileFooter && (
         <div className="md:hidden">
           <div className="max-w-6xl mx-auto px-4 py-6 text-center space-y-2">

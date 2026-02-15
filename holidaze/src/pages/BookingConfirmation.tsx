@@ -16,7 +16,6 @@ export default function BookingConfirmed() {
   const { state } = useLocation();
   const data = state as State | null;
 
-  // If user refreshes, router state is lost
   if (!data) {
     return (
       <div className="max-w-xl mx-auto p-6 space-y-3">
