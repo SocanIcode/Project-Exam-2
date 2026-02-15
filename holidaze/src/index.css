@@ -95,7 +95,7 @@
   .btn-secondary {
     @apply inline-flex items-center justify-center rounded-xl border-2 border-[#D1D1D1] text-black
   px-4 py-2 font-semibold
-      hover:bg-[] hover:text-white hover:border-[#E56BA8]
+      hover:bg-[#E56BA8] hover:text-white hover:border-[#E56BA8]
       transition-colors
       disabled:opacity-60 disabled:cursor-not-allowed
       focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#E56BA8]/30;
